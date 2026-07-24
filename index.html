@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Rara Kesayangan Aku☕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="steam" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <main class="receipt-wrap">
+    <section class="receipt" id="receipt">
+
+      <div class="receipt-header">
+        <p class="eyebrow">dari kafi</p>
+        <h1>SURAT UNTUK<br><span>RARA</span></h1>
+        <p class="tagline">barista terbaik, kesayangan nomor satu</p>
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <ul class="order-list">
+        <li>
+          <span class="qty">01</span>
+          <span class="item">Jemput pulang kerja</span>
+          <span class="price">gratis</span>
+        </li>
+        <li>
+          <span class="qty">02</span>
+          <span class="item">Beli kopi berdua</span>
+          <span class="price">aku traktir</span>
+        </li>
+        <li>
+          <span class="qty">03</span>
+          <span class="item">Kelas coding privat</span>
+          <span class="price">gratis, sabar</span>
+        </li>
+      </ul>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="photo-frame">
+        <img src="untuk-rara.jpeg" alt="Foto kita" id="photo"
+             onerror="this.parentElement.classList.add('no-photo')">
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="code-block">
+        <div class="code-topbar"><span></span><span></span><span></span> rencana.js</div>
+        <pre><code><span class="c-key">if</span> (besok.<span class="c-fn">selesaiKerja</span>(rara)) {
+  <span class="c-fn">jemput</span>(rara);
+  <span class="c-fn">mampirCafe</span>(<span class="c-str">"BeliKopi"</span>);
+  <span class="c-fn">ajarinCoding</span>(rara, { sabar: <span class="c-key">true</span> });
+  <span class="c-fn">pulangBareng</span>();
+}</code></pre>
+      </div>
+
+      <div class="total-row">
+        <span>TOTAL</span>
+        <span id="total">1 sore + 1 kopi + 1 kamu</span>
+      </div>
+
+      <div class="cta-wrap">
+        <button id="yesBtn" class="btn btn-yes">iyaaaa, jemput aku yaaaa</button>
+        <button id="noBtn" class="btn btn-no">mikir dulu</button>
+      </div>
+
+      <p class="footer-note" id="footerNote">struk berlaku selama kamu masih sayang aku</p>
+
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-card">
+      <p class="big-emoji">☕💛</p>
+      <h2>siappp, sayanggg</h2>
+      <p>ditunggu jam pulang kerjanyaaa, aku bawa hati sama helm ekstra hehehehehe</p>
+      <button id="closeOverlay" class="btn btn-yes">tutup</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
